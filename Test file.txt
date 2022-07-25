@@ -8,8 +8,7 @@ elif num>0:
 else:
     print('the number is zero:')
 
-OUTPUT:enter the number:12
-the number is positive
+
 ********************************************************************************************************
  ex:2 # Factorial number# 
 num = int(input("enter the number:"))
