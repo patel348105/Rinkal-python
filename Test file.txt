@@ -1,0 +1,273 @@
+ ex:1 #positive or nagative#
+
+num=int(input('enter the number:'))
+if num<0:
+    print('the number is nagative')
+elif num>0:
+    print('the number is positive')
+else:
+    print('the number is zero:')
+
+OUTPUT:enter the number:12
+the number is positive
+********************************************************************************************************
+ ex:2 # Factorial number# 
+num = int(input("enter the number:"))
+fact = 1
+i =1
+
+while i <= num:
+    fact = fact * i
+    i = i+1
+
+print(f"fectorial:{fact}")
+
+OUTPUT:enter the number:4
+fectorial:24
+***********************************************************************************************************************
+ex:3 #Fibonacci series#
+x=0
+y=1
+i=1
+while i<10:
+    z=x+y
+    print(f"{z}")
+    x=y
+    y=z
+    i+=1
+
+OUTPUT:1
+2
+3
+5
+8
+13
+21
+34
+55
+***********************************************************************************************************************
+QUE 3:- How memory is managed in Python?
+ANS:-
+    According to the Python memory management documentation,
+Python has a private heap that stores our program’s objects and data structures.
+Python memory manager takes care of the bulk of the memory management work and allows us to concentrate on our code.
+***********************************************************************************************************************
+QUE 4:- What is the purpose continue statement in python?
+ANS:- 
+Python continue statement:
+    It returns the control to the beginning of the while loop.. 
+    The continue statement rejects all the remaining statements in the
+    current iteration of the loop and moves the control back to the top of the loop.
+The continue statement can be used in both while and for loops.
+***********************************************************************************************************************
+ex:5 #swap num with temp variablr swap num #
+A=5
+B=7
+A,B=B,A
+print('swap the number A:',A)
+print('swap the number B:',B)
+
+OUTPUT:swap the number A: 7
+swap the number B: 5
+
+#swap num without temp variablr swap num #
+
+
+A=int(input('enetr the value A:'))
+B=int(input('enetr the value B:'))
+A,B=B,A
+print('swap the number A:',A)
+print('swap the number B:',B)
+
+OUTPUT:enetr the value A:2
+enetr the value B:6
+swap the number A: 6
+swap the number B: 2
+***********************************************************************************************************************
+
+ex:6 #num is even or odd #
+num = int(input("Enter the number: "))
+i = num%2
+if i == :
+    print(num, "is an even number")
+elif i== 1:
+    print(num, "is an odd number")
+
+OUTPUT:Enter the number: 12
+12 is an even number
+***********************************************************************************************************************
+ ex:7 #vowel num or not#
+
+x=input('enter the letters:')
+if (x=='a'or x=='e'or x=='i'or x=='o' or x=='u'):
+    print('letter is vowel')
+else:
+    print('letter is not vowel')
+
+OUTPUT:enter the letters:d
+letter is not vowel
+***********************************************************************************************************************
+ ex:8 #eual sum will be zero#
+num1=10
+num2=45
+num3=65
+add=num1+num2+num3
+
+if num1==num2 or num2==num3 or num3==num1 :
+    print("Addition:0")
+else:
+    print('addition:',{add})
+
+OUTPUT:addition: {120}
+***********************************************************************************************************************
+ex:9 #equal or their sum or diff 5#
+a=1
+b=4
+if (a+b)==5 or a==b:
+    print('true')
+else:
+    print('false')
+
+OUTPUT:true
+************************************************************************************************************************
+ex:10 #sum of first positive interger#
+num=int(input('enter the num:'))
+sum=(num*(num+1)/2)
+print(sum)
+
+OUTPUT:enter the num:12
+78.0
+***********************************************************************************************************************
+
+ex:11 #Write a Python program to calculate the length of a string#
+str1="i have completed my BE"
+str1.count('')
+
+OUTPUT:23
+***********************************************************************************************************************
+ex:12 #Write a Python program to count the number of characters (characterfrequency) in a string#
+str1="i have completed my BE"
+str1.count('e')
+
+OUTPUT:3
+***********************************************************************************************************************
+ex:13 #What are negative indexes and why are they used?#
+indexes are used in arrays in all the programming languages.
+We can access the elements of an array by going through their indexes. 
+But no programming language allows us to use a negative index value such as -4. Python programming language 
+supports negative indexing of arrays, something which is not available in arrays in most other programming
+languages. This means that the index value of -1 gives the last element, and -2 gives the second last element of 
+an array. The negative indexing starts from where the array ends. This means that the last element of the array is 
+the first element in the negative indexing which is -1.
+
+Example:
+arr = [10, 20, 30, 40, 50]
+print (arr[-1])
+print (arr[-2])
+
+Output:
+50
+40
+*********************************************************************************************************************
+ex:14 #Write a Python program to count occurrences of a substring in a string.#
+str1="i have completed my BE"
+print(str1[0:5])
+
+OUTPUT:i hav
+***********************************************************************************************************************
+ex:15 #Write a Python program to count the occurrences of each word in a given sentence#
+str1="i would like to read nowel to read stories"
+str1.count('would')
+
+OUTPUT:1
+***********************************************************************************************************************
+ex:16 #Write a Python program to get a single string from two given strings,
+#separated by a space and swap the first two characters of each string.#
+str1=(input("enter the string:"))
+str2=(input("enter the string:"))
+x=str1[0:2]
+a=str1.replace(str1[0:2],str2[0:2])
+b=str2.replace(str2[0:2],x)
+print('swap the number:',a)
+print('swap the numbery:',b)
+
+OUTPUT:enter the string:hello
+enter the string:sir
+swap the number: sillo
+swap the numbery: her
+***********************************************************************************************************************
+ex:17 #program to add 'ing' ends with 'ing' then add 'ly'.(lengthshould be at least 3).#
+str1="lerning,practising,training in python"
+str1.replace('ing','ly',2)
+
+OUTPUT:'lernly,practisly,training in python'
+***********************************************************************************************************************
+
+ex:18 #Write a Python program to find the first appearance of the substring 'not'#
+#and 'poor' from a given string, if 'not' follows the 'poor', replace the whole#
+#'not'...'poor'substring with 'good'. Return the resulting string.#
+str1='in a class some stdents are poor or some are not poor'
+str2='girls are poor and boys are not'
+print(str2.find('poor'))
+print(str2.find('not'))
+str1.replace('not poor','good')
+
+OUTPUT:
+10
+28
+'in a class some stdents are poor or some are good'
+***********************************************************************************************************************
+ex:19 #Write a Python function that takes a list of words and returns the lengthof the longest one#
+l1=['red','pink','orange','black']
+l_length = []
+for i in l1:
+    l_length.append(len(i))
+    
+m_num = max(l_length)
+idx = l_length.index(m_num)
+l1[idx]
+
+OUTPUT:orange
+***********************************************************************************************************************
+ex:20 #Write a Python function to reverses a string if its length is a multiple of 4.#
+str1=input("enter the string:")
+if(len(str1)%4==0):
+    print(str1[::-1])
+else:
+    print(str1)
+
+OUTPUT:enter the string:python easy.
+.ysae nohtyp
+***********************************************************************************************************************
+ex:21 Write a Python program to get a string made of the first 2 and the last 2
+chars from a given a string. Ifthe string length islessthan 2,return instead
+of the empty string.
+o Sample String:w3resource'
+o Expected Result: 'w3ce'
+o Sample String: 'w3'
+o Expected Result: 'w3w3'
+o Sample String: ' w'
+o Expected Result: Empty String.
+    
+#INPUT#
+str=input("enter the string:")
+if len(str)<2:
+     print("empty string")
+else:
+    s=str[:2]+str[-2:]
+    print(s)
+
+OUTPUT:enter the string:w3
+w3w3
+***********************************************************************************************************************
+ex:22 #Write a Python function to insert a string in the middle of a string.#
+str1='Python is easy'
+str2= 'lion'
+char = len(str1) // 2
+idx = char - 1
+str1[:7] + str2 + str1[7:]
+
+OUTPUT:'Python lionis easy'
+
+
+***************************************************************************************************************************
